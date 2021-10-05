@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JsonDatabaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-05T08:50:23" hostname="DESKTOP-RRDFOR1" time="0.324">
+  <properties/>
+  <testcase name="start" classname="JsonDatabaseTest" time="0.324"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+Here
+> exit
+?[1;31m
+Start test 2?[0m
+> get 1
+ERROR
+OK
+> set 1 Hello world!
+OK
+> set 1 HelloWorld!
+OK
+> get 1
+HelloWorld!
+OK
+> delete 1
+OK
+> delete 1
+OK
+> get 1
+ERROR
+OK
+> set 55 Some text here
+OK
+> get 55
+Some text here
+OK
+> get 56
+ERROR
+OK
+> delete 55
+OK
+> delete 56
+OK
+> delete 100
+OK
+> delete 101
+ERROR
+> exit
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
